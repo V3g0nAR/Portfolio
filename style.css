@@ -73,7 +73,7 @@ li a:hover{
 	position: absolute;
 	border: 5px solid white;
 	display: table;
-	top: 50%;
+	top: 80%;
 	left: 50%;
 	transform: translate(-50%, -50%);
 }
