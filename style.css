@@ -1,0 +1,111 @@
+html {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100vh;
+	background: white;
+	display: table;
+}
+
+.header {
+  text-align: center;
+}
+
+.nav {
+	height: 83px;
+}
+
+ul {
+	margin: auto;
+	width: auto;
+	background: rgba(0,0,0,0.8);
+}
+
+li{
+	margin-top: 26px;
+	display: inline-block;
+}
+
+li.lul a {
+	text-align: left;
+}
+
+li a {
+	text-decoration: none;
+	color: #fff;
+	text-transform: uppercase;
+	font-family: 'Overpass', sans-serif;
+	font-weight: lighter;
+	font-size: 24px;
+	transition: 1s;
+	padding: 30px;
+}
+
+li a:hover{
+	transition: 1s;
+	color: black;
+	background: rgba(255, 255, 255, 0.7);
+}
+
+.container {
+	width: auto;
+	background: white;
+	margin: auto;
+	padding: 270px;
+	background-image: url(Imagens/Background.jpg);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: 100% 100%;
+	position: relative;
+}
+
+.container-2 {
+	width: 600px;
+	height: 124px;
+	background: black;
+	padding: 200px;
+	position: absolute;
+	border: 5px solid white;
+	display: table;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.container-3 {
+	width: 10%;
+	height: 124px;
+	padding: 200px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-image: url(Imagens/AlexandreRaposo.jpg);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+
+.container-4 {
+	width: 10%;
+	height: 124px;
+	background: grey;
+	padding: 200px;
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+.container-4 ol {
+	margin-top: -150px;
+	margin-left: -170px;
+	display: table-cell;
+	float: left;
+	width: 100px;
+
+}
+
