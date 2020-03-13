@@ -76,6 +76,7 @@ li a:hover{
 	top: 80%;
 	left: 50%;
 	transform: translate(-50%, -50%);
+	border-radius: 10px;
 }
 
 .container-3 {
@@ -83,29 +84,38 @@ li a:hover{
 	height: 124px;
 	padding: 200px;
 	position: absolute;
-	top: 0;
-	left: 0;
-	background-image: url(Imagens/AlexandreRaposo.jpg);
-	background-repeat: no-repeat;
-	background-size: 100% 100%;
+	top: 50%;
+	left: 25%;
+	transform: translate(-50%, -50%);
+	background: white;
 }
+
+img {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	border: 3px solid black;
+	border-radius: 2px;
+}
+
+
+
+
 
 .container-4 {
 	width: 10%;
 	height: 124px;
-	background: grey;
+	background: white;
 	padding: 200px;
 	position: absolute;
 	top: 0;
 	right: 0;
 }
 
-.container-4 ol {
-	margin-top: -150px;
-	margin-left: -170px;
-	display: table-cell;
-	float: left;
-	width: 100px;
-
+.container-4 a {
+	position: absolute;
+	top: 20px;
+	left: 20px;
 }
 
