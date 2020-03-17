@@ -23,22 +23,18 @@ body {
 	height: 83px;
 }
 
-ul {
+.header ul {
 	margin: auto;
 	width: auto;
 	background: rgba(0,0,0,0.8);
 }
 
-li{
+.header li{
 	margin-top: 26px;
 	display: inline-block;
 }
 
-li.lul a {
-	text-align: left;
-}
-
-li a {
+.header li a {
 	text-decoration: none;
 	color: #fff;
 	text-transform: uppercase;
@@ -125,6 +121,7 @@ li a:hover{
 	top: 40%;
 	left: 50%;
 	transform: translate(-50%, -50%);
+	background: orange;
 }
 
 #experiencia h1 {
@@ -223,30 +220,53 @@ li a:hover{
 	top: 42%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-	background: red;
 	text-align: center;
+	background: yellow;
 }
-#habilidades {
-	width: 98%;
-	height: 400px;
-	position: relative;
-	display: table;
-	top: 44%;
+
+#formacao h1 {
+	position: absolute;
+	top: 0;
 	left: 50%;
 	transform: translate(-50%, -50%);
-	background: yellow;
-	text-align: center;
 }
+
+#habilidades {
+	width: 98%;
+	height: 600px;
+	position: relative;
+	display: table;
+	top: 55%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+	background: green;
+}
+
+#habilidades h1 {
+	position: absolute;
+	top: 0;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
 #contacto {
 	width: 98%;
 	height: 400px;
 	position: relative;
 	display: table;
-	top: 46%;
+	top: 46.5%;
 	left: 50%;
 	transform: translate(-50%, -50%);
 	background: pink;
 	text-align: center;
+}
+
+#contacto h1 {
+	position: absolute;
+	top: 0;
+	left: 50%;
+	transform: translate(-50%, -50%);
 }
 
 #rodape {
@@ -258,4 +278,47 @@ li a:hover{
 	transform: translate(-50%, -50%);
 	background: gray;
 	text-align: center;
+}
+
+.data {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 49%;
+	height: 400px;
+
+}
+
+.descricao {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 49%;
+	height: 400px;
+}
+
+.data a {
+	position: absolute;
+	top: 70px;
+	right: 20px;
+	text-align: right;
+}
+
+.descricao a {
+	position: absolute;
+	top: 70px;
+	left: 20px;
+	text-align: left;
+}
+
+#habilidades .tabela1 {
+	position: absolute;
+	top: 60px;
+	left: 20%;
+}
+
+#habilidades .tabela2 {
+	position: absolute;
+	top: 60px;
+	right: 20%;
 }
