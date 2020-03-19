@@ -1,82 +1,98 @@
-html {
-	margin: 0;
-	padding: 0;
-	width: 100%;
-}
-
 body {
-	margin: 0;
-	padding: 0;
-	width: 100%;
-	height: 100vh;
-	background: white;
+	margin: 0px;
+	padding: 0px;
+	background-image: url(Imagens/Background2.jpg);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: 100% 100%;
 }
 
-.header {
-  text-align: center;
-	width: 100%;
-	position: fixed;
-	z-index: 1;
+h1, a, p, td {
+	font-family: Arial;
 }
 
-.nav {
-	height: 83px;
+/*----------------------BARRA DE NAVEGAÇÃO----------------------*/
+
+#header a {
+	text-decoration: none;
+	text-transform: uppercase;
+	color: white;
+	font-size: 1.2rem;
+	font-family: Arial;
 }
 
-.header ul {
-	margin: auto;
-	width: auto;
+#header {
+	position: sticky;
+	top: 0;
+	z-index: 100;
+	display: flex;
+	justify-content: space-between;
+	padding: 10px;
+	align-items: center;
+	flex-wrap: wrap;
+	transition: 1s;
 	background: rgba(0,0,0,0.8);
 }
 
-.header li{
-	margin-top: 26px;
-	display: inline-block;
+.menu ul {
+	display: flex;
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+	font-size: 1.2rem;
+	font-family: Arial;
 }
 
-.header li a {
-	text-decoration: none;
-	color: #fff;
+.menu li {
+	margin-left: 20px;
+}
+
+.menu li a {
+	display: block;
+	padding: 10px;
 	text-transform: uppercase;
-	font-family: 'Overpass', sans-serif;
-	font-weight: lighter;
-	font-size: 24px;
-	transition: 1s;
-	padding: 30px;
 }
 
-li a:hover{
+#header a {
+	display: block;
+	padding: 10px;
+	text-transform: uppercase;
+}
+
+.menu li a:hover {
 	transition: 1s;
 	color: black;
 	background: rgba(255, 255, 255, 0.7);
 }
 
-.container {
-	width: auto;
-	background: white;
-	margin: auto;
-	padding: 270px;
-	background-image: url(Imagens/Background.jpg);
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-	background-size: 100% 100%;
-	position: relative;
+#header a:hover {
+	transition: 1s;
+	color: black;
+	background: rgba(255, 255, 255, 0.7);
 }
 
-.container-2 {
+/*----------------------BARRA DE NAVEGAÇÃO----------------------*/
+
+#corpo {
+	position: relative;
+	top: 450px;
+}
+
+/*----------------------INFORMAÇÃO PESSOAL (BIO)----------------------*/
+.container {
+	position: absolute;
+	top: 45%;
+	left: 50%;
+	transform: translate(-50%, -50%);
 	width: 600px;
 	height: 124px;
 	padding: 200px;
-	position: absolute;
 	border: 5px solid white;
 	display: table;
-	top: 80%;
-	left: 50%;
-	transform: translate(-50%, -50%);
 	border-radius: 10px;
 }
 
-.container-3 {
+.foto-perfil {
 	width: 10%;
 	height: 124px;
 	padding: 200px;
@@ -85,10 +101,9 @@ li a:hover{
 	left: 25%;
 	transform: translate(-50%, -50%);
 	background: white;
-
 }
 
-.container-3 img {
+.foto-perfil img {
 	position: absolute;
 	top: 50%;
 	left: 50%;
@@ -97,7 +112,7 @@ li a:hover{
 	border-radius: 2px;
 }
 
-.container-4 {
+.info-pessoal {
 	width: 10%;
 	height: 124px;
 	background: white;
@@ -107,21 +122,31 @@ li a:hover{
 	right: 0;
 }
 
-.container-4 a {
+.info-pessoal a {
 	position: absolute;
 	top: 20px;
 	left: 20px;
+	font-size: 1.2rem;
+	font-family: Arial;
 }
 
+/*----------------------INFORMAÇÃO PESSOAL (BIO)----------------------*/
+
+/*----------------------EXPERIÊNCIA PROFISSIONAL----------------------*/
+
 #experiencia {
-	width: 98%;
-	height: 400px;
 	position: relative;
-	display: table;
-	top: 40%;
+	top: 500px;
 	left: 50%;
 	transform: translate(-50%, -50%);
-	background: orange;
+	width: 98%;
+	height: 420px;
+	display: table;
+	z-index: 10;
+	display: block;
+	flex-wrap: wrap;
+	background: white;
+	border-radius: 8px;
 }
 
 #experiencia h1 {
@@ -137,20 +162,22 @@ li a:hover{
 	left: 0;
 	width: 25%;
 	height: 400px;
+	display: block;
+	flex-wrap: wrap;
 }
 
 .bloco1 img{
 	position: absolute;
 	top: 0;
-	left: 25%;
-	display: table;
+	left: 50%;
+	transform: translate(-50%, 0);
 }
 .bloco1 a {
-	text-align: center;
-	display: table-cell;
 	position: absolute;
-	top: 200px;
+	top: 50%;
 	left: 0;
+	right: 0;
+	text-align: center;
 }
 .bloco2 {
 	position: absolute;
@@ -158,21 +185,22 @@ li a:hover{
 	right: 50%;
 	width: 25%;
 	height: 400px;
+	flex-wrap: wrap;
 }
 
 .bloco2 img{
 	position: absolute;
 	top: 0;
-	left: 25%;
-	display: table;
+	left: 50%;
+	transform: translate(-50%, 0);
 }
 
 .bloco2 a {
-	text-align: center;
-	display: table-cell;
 	position: absolute;
-	top: 200px;
+	top: 50%;
 	left: 0;
+	right: 0;
+	text-align: center;
 }
 .bloco3 {
 	position: absolute;
@@ -180,21 +208,22 @@ li a:hover{
 	right: 25%;
 	width: 25%;
 	height: 400px;
+	flex-wrap: wrap;
 }
 
 .bloco3 img{
 	position: absolute;
 	top: 0;
-	left: 25%;
-	display: table;
+	left: 50%;
+	transform: translate(-50%, 0);
 }
 
 .bloco3 a {
-	text-align: center;
-	display: table-cell;
 	position: absolute;
-	top: 200px;
+	top: 50%;
 	left: 0;
+	right: 0;
+	text-align: center;
 }
 
 .bloco4 {
@@ -203,25 +232,32 @@ li a:hover{
 	right: 0;
 	width: 25%;
 	height: 400px;
+	flex-wrap: wrap;
 }
 
 .bloco4 img{
 	position: absolute;
 	top: 0;
-	left: 25%;
+	left: 50%;
+	transform: translate(-50%, 0);
 	display: table;
 }
 
+/*----------------------EXPERIÊNCIA PROFISSIONAL----------------------*/
+
+/*----------------------FORMAÇÃO----------------------*/
+
 #formacao {
-	width: 98%;
-	height: 400px;
 	position: relative;
-	display: table;
-	top: 42%;
+	top: 550px;
 	left: 50%;
 	transform: translate(-50%, -50%);
+	width: 98%;
+	height: 400px;
+	display: table;
 	text-align: center;
-	background: yellow;
+	background: white;
+	border-radius: 8px;
 }
 
 #formacao h1 {
@@ -229,55 +265,6 @@ li a:hover{
 	top: 0;
 	left: 50%;
 	transform: translate(-50%, -50%);
-}
-
-#habilidades {
-	width: 98%;
-	height: 600px;
-	position: relative;
-	display: table;
-	top: 55%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	text-align: center;
-	background: green;
-}
-
-#habilidades h1 {
-	position: absolute;
-	top: 0;
-	left: 50%;
-	transform: translate(-50%, -50%);
-}
-
-#contacto {
-	width: 98%;
-	height: 400px;
-	position: relative;
-	display: table;
-	top: 46.5%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	background: pink;
-	text-align: center;
-}
-
-#contacto h1 {
-	position: absolute;
-	top: 0;
-	left: 50%;
-	transform: translate(-50%, -50%);
-}
-
-#rodape {
-	width: 100%;
-	position: relative;
-	display: table;
-	top: 32%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	background: gray;
-	text-align: center;
 }
 
 .data {
@@ -311,6 +298,30 @@ li a:hover{
 	text-align: left;
 }
 
+/*----------------------EXPERIÊNCIA PROFISSIONAL----------------------*/
+
+/*----------------------HABILIDADES----------------------*/
+
+#habilidades {
+	position: relative;
+	top: 710px;
+	left: 50%;
+	width: 98%;
+	height: 600px;
+	display: table;
+	transform: translate(-50%, -50%);
+	text-align: center;
+	background: white;
+	border-radius: 8px;
+}
+
+#habilidades h1 {
+	position: absolute;
+	top: 0;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
 #habilidades .tabela1 {
 	position: absolute;
 	top: 60px;
@@ -322,3 +333,74 @@ li a:hover{
 	top: 60px;
 	right: 20%;
 }
+
+.titulo a {
+	position: absolute;
+	top: 70px;
+	right: 20px;
+	text-align: right;
+}
+
+.descricao a {
+	position: absolute;
+	top: 70px;
+	left: 20px;
+	text-align: left;
+}
+
+/*----------------------EXPERIÊNCIA PROFISSIONAL----------------------*/
+
+/*----------------------CONTACTO----------------------*/
+
+#contacto {
+	position: relative;
+	top: 670px;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 98%;
+	height: 400px;
+	display: table;
+	text-align: center;
+	background: white;
+	border-radius: 8px;
+}
+
+#contacto h1 {
+	position: absolute;
+	top: 0;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+#contacto .titulo {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 50%;
+	height: 400px;
+}
+
+#contacto .descricao {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 50%;
+	height: 400px;
+}
+
+/*----------------------CONTACTO----------------------*/
+
+/*----------------------RODAPE----------------------*/
+
+#rodape {
+	position: relative;
+	top: 1000px;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 100%;
+	display: table;
+	background: gray;
+	text-align: center;
+}
+
+/*----------------------RODAPE----------------------*/
