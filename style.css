@@ -5,26 +5,12 @@ body {
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-size: 100% 100%;
-}
-
-h1, a, p, td {
 	font-family: Arial;
 }
 
 /*----------------------BARRA DE NAVEGAÇÃO----------------------*/
 
-#header a {
-	text-decoration: none;
-	text-transform: uppercase;
-	color: white;
-	font-size: 1.2rem;
-	font-family: Arial;
-}
-
 #header {
-	position: sticky;
-	top: 0;
-	z-index: 100;
 	display: flex;
 	justify-content: space-between;
 	padding: 10px;
@@ -32,6 +18,14 @@ h1, a, p, td {
 	flex-wrap: wrap;
 	transition: 1s;
 	background: rgba(0,0,0,0.8);
+}
+
+#header a {
+	text-decoration: none;
+	text-transform: uppercase;
+	color: white;
+	font-size: 1.2rem;
+	font-family: Arial;
 }
 
 .menu ul {
@@ -45,12 +39,6 @@ h1, a, p, td {
 
 .menu li {
 	margin-left: 20px;
-}
-
-.menu li a {
-	display: block;
-	padding: 10px;
-	text-transform: uppercase;
 }
 
 #header a {
@@ -79,222 +67,164 @@ h1, a, p, td {
 }
 
 /*----------------------INFORMAÇÃO PESSOAL (BIO)----------------------*/
-.container {
-	position: absolute;
-	top: 45%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	width: 600px;
-	height: 124px;
-	padding: 200px;
+.container-personal-data {
+	margin-top: 50px;
+	margin-left: 20%;
+	margin-right: 20%;
 	border: 5px solid white;
-	display: table;
 	border-radius: 10px;
+	background-color: white;
+
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
 }
 
-.foto-perfil {
-	width: 10%;
-	height: 124px;
-	padding: 200px;
-	position: absolute;
-	top: 50%;
-	left: 25%;
-	transform: translate(-50%, -50%);
-	background: white;
-}
-
-.foto-perfil img {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
+.container-personal-data img {
+	margin: auto;
+	margin-top: 20px;
+	margin-bottom: 20px;
 	border: 3px solid black;
 	border-radius: 2px;
+	width: 372px;
+	height: 496px;
 }
 
-.info-pessoal {
-	width: 10%;
-	height: 124px;
+.info {
+	margin: auto;
+	width: 372px;
 	background: white;
-	padding: 200px;
-	position: absolute;
-	top: 0;
-	right: 0;
-}
-
-.info-pessoal a {
-	position: absolute;
-	top: 20px;
-	left: 20px;
 	font-size: 1.2rem;
-	font-family: Arial;
+	font-family: 'Bellota Text', cursive;
 }
 
 /*----------------------INFORMAÇÃO PESSOAL (BIO)----------------------*/
 
 /*----------------------EXPERIÊNCIA PROFISSIONAL----------------------*/
 
-#experiencia {
-	position: relative;
-	top: 500px;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	width: 98%;
-	height: 420px;
-	display: table;
-	z-index: 10;
-	display: block;
+#experience {
+	margin: 10px 10px 10px 10px;
+	width: auto;
+	display: flex;
 	flex-wrap: wrap;
 	background: white;
 	border-radius: 8px;
+	justify-content: center;
 }
 
-#experiencia h1 {
-	position: absolute;
-	top: 0;
-	left: 50%;
-	transform: translate(-50%, -50%);
+.experience-title {
+	margin: 100px 10px 0px 10px;
+	width: auto;
+	display: flex;
+	flex-wrap: wrap;
+	background: white;
+	border: 1px solid white;
+	border-radius: 3px;
+	justify-content: center;
+	font-family: 'Righteous', cursive;
 }
 
-.bloco1 {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 25%;
-	height: 400px;
+
+.block1 {
 	display: block;
-	flex-wrap: wrap;
-}
-
-.bloco1 img{
-	position: absolute;
-	top: 0;
-	left: 50%;
-	transform: translate(-50%, 0);
-}
-.bloco1 a {
-	position: absolute;
-	top: 50%;
-	left: 0;
-	right: 0;
 	text-align: center;
-}
-.bloco2 {
-	position: absolute;
-	top: 0;
-	right: 50%;
-	width: 25%;
-	height: 400px;
-	flex-wrap: wrap;
-}
-
-.bloco2 img{
-	position: absolute;
-	top: 0;
-	left: 50%;
-	transform: translate(-50%, 0);
-}
-
-.bloco2 a {
-	position: absolute;
-	top: 50%;
-	left: 0;
-	right: 0;
+	align-items: center;
+	margin: 50px;
 	text-align: center;
+	align-items: center;
 }
-.bloco3 {
-	position: absolute;
-	top: 0;
-	right: 25%;
-	width: 25%;
-	height: 400px;
-	flex-wrap: wrap;
+.block1 img {
+	width: 256px;
+	height: 128px;
 }
 
-.bloco3 img{
-	position: absolute;
-	top: 0;
-	left: 50%;
-	transform: translate(-50%, 0);
-}
 
-.bloco3 a {
-	position: absolute;
-	top: 50%;
-	left: 0;
-	right: 0;
+
+.block2 {
+	display: block;
 	text-align: center;
+	align-items: center;
+	margin: 50px;
 }
 
-.bloco4 {
-	position: absolute;
-	top: 0;
-	right: 0;
-	width: 25%;
-	height: 400px;
-	flex-wrap: wrap;
+.block2 img{
+	width: 256px;
+	height: 128px;
 }
 
-.bloco4 img{
-	position: absolute;
-	top: 0;
-	left: 50%;
-	transform: translate(-50%, 0);
-	display: table;
+.block3 {
+	display: block;
+	text-align: center;
+	align-items: center;
+	margin: 50px;
+}
+
+.block3 img{
+	 width: 256px;
+	 height: 128px;
+}
+
+.block4 {
+	display: block;
+	text-align: center;
+	align-items: center;
+	margin: 50px;
+}
+
+.block4 img{
+	 width: 256px;
+	 height: 128px;
+	 object-fit: scale-down;
 }
 
 /*----------------------EXPERIÊNCIA PROFISSIONAL----------------------*/
 
 /*----------------------FORMAÇÃO----------------------*/
 
-#formacao {
-	position: relative;
-	top: 550px;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	width: 98%;
-	height: 400px;
-	display: table;
+ #formation {
+	margin: 10px 10px 10px 10px;
+	width: auto;
 	text-align: center;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
 	background: white;
 	border-radius: 8px;
 }
 
-#formacao h1 {
-	position: absolute;
-	top: 0;
-	left: 50%;
-	transform: translate(-50%, -50%);
+.formation-title {
+	margin: 100px 10px 0px 10px;
+	width: auto;
+	display: flex;
+	flex-wrap: wrap;
+	background: white;
+	border: 1px solid white;
+	border-radius: 3px;
+	justify-content: center;
+	font-family: 'Righteous', cursive;
 }
 
-.data {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 49%;
-	height: 400px;
-
+.formation-info {
+	width: auto;
+	margin: 30px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
 }
 
-.descricao {
-	position: absolute;
-	top: 0;
-	right: 0;
-	width: 49%;
-	height: 400px;
+.formation-info td {
+	height: 67px;
 }
 
-.data a {
-	position: absolute;
-	top: 70px;
-	right: 20px;
+.date-1, .date-2, .date-3 {
 	text-align: right;
 }
 
-.descricao a {
-	position: absolute;
-	top: 70px;
-	left: 20px;
+.formation-info-1, .formation-info-2, .formation-info-3 {
 	text-align: left;
 }
 
@@ -302,105 +232,135 @@ h1, a, p, td {
 
 /*----------------------HABILIDADES----------------------*/
 
-#habilidades {
-	position: relative;
-	top: 710px;
-	left: 50%;
-	width: 98%;
-	height: 600px;
-	display: table;
-	transform: translate(-50%, -50%);
-	text-align: center;
+#habilities {
+	margin: 10px 10px 10px 10px;
+	width: auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
 	background: white;
 	border-radius: 8px;
 }
 
-#habilidades h1 {
-	position: absolute;
-	top: 0;
-	left: 50%;
-	transform: translate(-50%, -50%);
+.habilities-title {
+	margin: 100px 10px 0px 10px;
+	width: auto;
+	display: flex;
+	flex-wrap: wrap;
+	background: white;
+	border: 1px solid white;
+	border-radius: 3px;
+	justify-content: center;
+	font-family: 'Righteous', cursive;
 }
 
-#habilidades .tabela1 {
-	position: absolute;
-	top: 60px;
-	left: 20%;
+.table-1 {
+	width: 200px;
+	text-align: center;
+
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
 }
 
-#habilidades .tabela2 {
-	position: absolute;
-	top: 60px;
-	right: 20%;
+.table-2 {
+	width: 200px;
+	text-align: center;
+
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
 }
 
-.titulo a {
-	position: absolute;
-	top: 70px;
-	right: 20px;
-	text-align: right;
+.table-1 img {
+	width: 72px;
+	height: 72px;
+	justify-content: center;
+	align-items: center;
 }
 
-.descricao a {
-	position: absolute;
-	top: 70px;
-	left: 20px;
-	text-align: left;
+.table-2 img {
+	width: 72px;
+	height: 72px;
+	justify-content: center;
+	align-items: center;
 }
 
 /*----------------------EXPERIÊNCIA PROFISSIONAL----------------------*/
 
-/*----------------------CONTACTO----------------------*/
-
-#contacto {
-	position: relative;
-	top: 670px;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	width: 98%;
-	height: 400px;
-	display: table;
-	text-align: center;
-	background: white;
-	border-radius: 8px;
-}
-
-#contacto h1 {
-	position: absolute;
-	top: 0;
-	left: 50%;
-	transform: translate(-50%, -50%);
-}
-
-#contacto .titulo {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 50%;
-	height: 400px;
-}
-
-#contacto .descricao {
-	position: absolute;
-	top: 0;
-	right: 0;
-	width: 50%;
-	height: 400px;
-}
-
-/*----------------------CONTACTO----------------------*/
-
 /*----------------------RODAPE----------------------*/
 
-#rodape {
-	position: relative;
-	top: 1000px;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	width: 100%;
-	display: table;
+#container-footer {
+	margin: 100px 0px 0px 0px;
+	width: auto;
 	background: gray;
 	text-align: center;
+	padding: 1px;
 }
 
 /*----------------------RODAPE----------------------*/
+
+
+@media (max-width: 730px) {
+	.container-personal-data {
+		margin-top: 50px;
+		margin-left: 0;
+		margin-right: 0;
+		border-radius: 0;
+	}
+	#experience {
+		margin-left: 0;
+		margin-right: 0;
+		border-radius: 0;
+	}
+	#formation {
+		margin-left: 0;
+		margin-right: 0;
+		border-radius: 0;
+	}
+	#habilities {
+		margin-left: 0;
+		margin-right: 0;
+		border-radius: 0;
+	}
+	#contact {
+		margin-left: 0;
+		margin-right: 0;
+		border-radius: 0;
+	}
+	.experience-title {
+		margin-left: 0;
+		margin-right: 0;
+		border-radius: 0;
+	}
+	.formation-title {
+		margin-left: 0;
+		margin-right: 0;
+		border-radius: 0;
+	}
+	.habilities-title {
+		margin-left: 0;
+		margin-right: 0;
+		border-radius: 0;
+	}
+}
+
+@media (max-width: 893px) {
+	.menu li {
+		margin-left: 0px;
+	}
+	#header {
+		justify-content: center;
+		align-items: center;
+		display: block;
+		text-align: center;
+	}
+	#header ul {
+		display: block;
+		text-align: center;
+		align-items: center;
+	}
+}
