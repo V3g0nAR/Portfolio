@@ -61,11 +61,6 @@ body {
 
 /*----------------------BARRA DE NAVEGAÇÃO----------------------*/
 
-#corpo {
-	position: relative;
-	top: 450px;
-}
-
 /*----------------------INFORMAÇÃO PESSOAL (BIO)----------------------*/
 .container-personal-data {
 	margin-top: 50px;
@@ -110,6 +105,7 @@ body {
 	flex-wrap: wrap;
 	background: white;
 	border-radius: 8px;
+	align-items: center;
 	justify-content: center;
 }
 
@@ -125,54 +121,46 @@ body {
 	font-family: 'Righteous', cursive;
 }
 
-
-.block1 {
+.block-experience-1 {
 	display: block;
 	text-align: center;
-	align-items: center;
 	margin: 50px;
 	text-align: center;
-	align-items: center;
 }
-.block1 img {
+.block-experience-1 img {
 	width: 256px;
 	height: 128px;
 }
 
-
-
-.block2 {
+.block-experience-2 {
 	display: block;
 	text-align: center;
-	align-items: center;
 	margin: 50px;
 }
 
-.block2 img{
+.block-experience-2 img{
 	width: 256px;
 	height: 128px;
 }
 
-.block3 {
+.block-experience-3 {
 	display: block;
 	text-align: center;
-	align-items: center;
 	margin: 50px;
 }
 
-.block3 img{
+.block-experience-3 img{
 	 width: 256px;
 	 height: 128px;
 }
 
-.block4 {
+.block-experience-4 {
 	display: block;
 	text-align: center;
-	align-items: center;
 	margin: 50px;
 }
 
-.block4 img{
+.block-experience-4 img{
 	 width: 256px;
 	 height: 128px;
 	 object-fit: scale-down;
@@ -206,29 +194,30 @@ body {
 	font-family: 'Righteous', cursive;
 }
 
-.formation-info {
-	width: auto;
-	margin: 30px;
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-	align-items: center;
+.block-formation-1 {
+	display: block;
 	text-align: center;
+	align-items: center;
+	margin: 20px;
+	text-align: center;
+	width: 550px;
 }
 
-.formation-info td {
-	height: 67px;
+.block-formation-2 {
+	display: block;
+	text-align: center;
+	margin: 20px;
+	width: 550px;
 }
 
-.date-1, .date-2, .date-3 {
-	text-align: right;
+.block-formation-3 {
+	display: block;
+	text-align: center;
+	margin: 20px;
+	width: 550px;
 }
 
-.formation-info-1, .formation-info-2, .formation-info-3 {
-	text-align: left;
-}
-
-/*----------------------EXPERIÊNCIA PROFISSIONAL----------------------*/
+/*----------------------FORMAÇÃO----------------------*/
 
 /*----------------------HABILIDADES----------------------*/
 
@@ -237,8 +226,9 @@ body {
 	width: auto;
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: center;
+	text-align: center;
 	align-items: center;
+	justify-content: center;
 	background: white;
 	border-radius: 8px;
 }
@@ -247,7 +237,6 @@ body {
 	margin: 100px 10px 0px 10px;
 	width: auto;
 	display: flex;
-	flex-wrap: wrap;
 	background: white;
 	border: 1px solid white;
 	border-radius: 3px;
@@ -256,23 +245,23 @@ body {
 }
 
 .table-1 {
-	width: 200px;
+	margin: 50px;
+	display: block;
 	text-align: center;
+}
 
-	display: flex;
-	flex-wrap: wrap;
-	align-items: center;
-	justify-content: space-between;
+.table-1 td {
+	width: 100px;
 }
 
 .table-2 {
-	width: 200px;
+	margin: 50px;
+	display: block;
 	text-align: center;
+}
 
-	display: flex;
-	flex-wrap: wrap;
-	align-items: center;
-	justify-content: space-between;
+.table-2 td {
+	width: 100px;
 }
 
 .table-1 img {
@@ -289,7 +278,60 @@ body {
 	align-items: center;
 }
 
-/*----------------------EXPERIÊNCIA PROFISSIONAL----------------------*/
+/*----------------------HABILIDADES----------------------*/
+
+/*----------------------CURRICULUM----------------------*/
+
+#curriculum {
+ margin: 10px 10px 10px 10px;
+ width: auto;
+ text-align: center;
+ display: flex;
+ flex-wrap: wrap;
+ align-items: center;
+ justify-content: center;
+ background: white;
+ border-radius: 8px;
+}
+
+.curriculum-title {
+	margin: 100px 10px 0px 10px;
+	width: auto;
+	display: flex;
+	background: white;
+	border: 1px solid white;
+	border-radius: 3px;
+	justify-content: center;
+	font-family: 'Righteous', cursive;
+}
+
+.curriculum-download {
+	margin: 20px;
+	text-decoration: none;
+	text-transform: uppercase;
+	color: black;
+	font-size: 1.2rem;
+	font-family: Arial;
+	border: 2px solid black;
+	border-radius: 3px;
+	padding: 0.5em;
+}
+
+#curriculum a:hover {
+	transition: 1s;
+	color: white;
+	background: rgba(0, 0, 0, 0.7);
+}
+
+.curriculum img {
+	margin: 20px;
+	height: 100px;
+	width: 100px;
+	object-fit: scale-down;
+
+}
+
+/*----------------------CURRICULUM----------------------*/
 
 /*----------------------RODAPE----------------------*/
 
@@ -326,7 +368,7 @@ body {
 		margin-right: 0;
 		border-radius: 0;
 	}
-	#contact {
+	#curriculum {
 		margin-left: 0;
 		margin-right: 0;
 		border-radius: 0;
@@ -342,6 +384,11 @@ body {
 		border-radius: 0;
 	}
 	.habilities-title {
+		margin-left: 0;
+		margin-right: 0;
+		border-radius: 0;
+	}
+	.curriculum-title{
 		margin-left: 0;
 		margin-right: 0;
 		border-radius: 0;
@@ -362,5 +409,14 @@ body {
 		display: block;
 		text-align: center;
 		align-items: center;
+	}
+}
+
+@media (max-width: 636px) {
+	.table-1 {
+		margin-bottom: 0;
+	}
+	.table-2 {
+		margin-top: 0;
 	}
 }
